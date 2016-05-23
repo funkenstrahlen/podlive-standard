@@ -1,6 +1,10 @@
+**Das hier ist erst einmal die Beschreibung einer Idee. Weder vollständig noch korrekt.**
+
+[Offene Fragen](/issues)
+
 # Podlive Standard
 
-Das hier ist erst einmal die Beschreibung einer Idee und eines Standards für offenes Podcast Livestreaming.
+Ein Standard für offenes Podcast Livestreaming.
 
 Es gibt drei Parteien: Der Podcaster und sein Feed, das Livestreaming Backend und ein Podcastclient Cloudbackend. Podcastclient deshalb, weil Podcast Livestreams in einem Podcastclient perfekt aufgehoben sind und das Cloudbackend ohnehin schon Feeds verarbeitet.
 
