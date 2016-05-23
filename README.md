@@ -66,6 +66,7 @@ Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
 	    <podlive:endDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:endDate>
 	    <itunes:image href="http://podcast.funkenstrahlen.de/wp-content/cache/podlove/fe/cf0a7a7dfb680f8da110c73274b623/fs002-arduino-blinkenlichter_original.png" />
 	</item>
+</channel>
 ```
 
 ## Websocket Callback API
