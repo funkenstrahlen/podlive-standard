@@ -21,9 +21,7 @@ Ein `item` enthält dann folgende Infos:
 
 Diese Infos kann dann ein Podcast Backend parsen, das ohnehin schon Feeds ausliest.
 
-Die Callbacks sind vor allem für Push-Notifications interessant und um zu wissen, ob eine Sendung wirklich läuft. Die Callback URL zeigt dann zum Beispiel auf ein Streaming Backend, das diese standardisierte Schnittstelle anbietet.
-
-Das Podcast App Backend kann so in Echtzeit vom Streaming Backend Infos bekommen.
+Die Callbacks sind vor allem für Push-Notifications interessant und um zu wissen, ob eine Sendung wirklich läuft. Die Callback URL zeigt dann zum Beispiel auf ein Streaming Backend, das diese standardisierte Schnittstelle anbietet. Jedes Backend, das sich für Echtzeit Informationen zu einer Sendung interessiert kann sich zu diesem Websocket verbinden und darüber Infos direkt vom Streaming Backend erhalten.
 
 Anfragen, die man über den Wegsocket Callback abwickeln könnte:
 
