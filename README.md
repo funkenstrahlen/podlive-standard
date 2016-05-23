@@ -1,6 +1,6 @@
 **Das hier ist erst einmal die Beschreibung einer Idee. Weder vollständig noch korrekt.**
 
-[Offene Fragen](/issues)
+[Offene Fragen](https://github.com/funkenstrahlen/podlive-standard/issues)
 
 # Podlive Standard
 
