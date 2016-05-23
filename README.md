@@ -30,6 +30,8 @@ Anfragen, die man über den Wegsocket Callback abwickeln könnte:
 * Aktuelle Hörerzahlen
 * Sende Notification (zum Beispiel *Sendung beginnt in 10min*)
 
+![Grafik](Grafik.png)
+
 ## RSS Livestream Item
 
 Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
