@@ -9,19 +9,22 @@ Ein Standard für offenes Podcast Livestreaming.
 Es gibt drei Parteien: Der Podcaster und sein Feed, das Livestreaming Backend und ein Podcastclient Cloudbackend. Podcastclient deshalb, weil Podcast Livestreams in einem Podcastclient perfekt aufgehoben sind und das Cloudbackend ohnehin schon Feeds verarbeitet.
 
 ## Die Grundidee
-Informationen zur Livesendung wandern in den Podcastfeed. Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von Podcastclients ignoriert.
+Informationen zur Livesendung wandern in den Podcastfeed.
 
-Ein `item` enthält dann folgende Infos:
+Grundlegende Metadaten zum Streaming werden in den `channel` gepackt:
+
+* Wo gibt es den Livestream? (mehrere URLs möglich)
+* Websocket URL für Callbacks (optional)
+* Infos zum Chat (optional)
+
+Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von Podcastclients ignoriert.
 
 * Wann wird (voraussichtlich) gesendet?
-* Wo gibt es den Livestream? (mehrere URLs möglich)
 * Sendungstitel
 * Sendungsbeschreibung
-* Infos zum Chat (optional)
 * Collaborators (optional) (wobei das eigentlich ein anderer Standard sein sollte unabhängig vom Livestreaming)
 * Wie lange wird die Sendung dauern? (optional)
 * Coverart (optional)
-* Websocket URL für Callbacks (optional)
 
 Diese Infos kann dann ein Podcast Backend parsen, das ohnehin schon Feeds ausliest.
 
