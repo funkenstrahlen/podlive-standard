@@ -14,7 +14,7 @@ Informationen zur Livesendung wandern in den Podcastfeed.
 Grundlegende Metadaten zum Streaming werden in den `channel` gepackt:
 
 * Wo gibt es den Livestream? (mehrere URLs möglich)
-* Websocket URL für Callbacks (optional)
+* Webhook URL für Callbacks (optional)
 * Infos zum Chat (optional)
 
 Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von Podcastclients ignoriert.
@@ -28,9 +28,9 @@ Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von
 
 Diese Infos kann dann ein Podcast Backend parsen, das ohnehin schon Feeds ausliest.
 
-Die Callbacks sind vor allem für Push-Notifications interessant und um zu wissen, ob eine Sendung wirklich läuft. Die Callback URL zeigt dann zum Beispiel auf ein Streaming Backend, das diese standardisierte Schnittstelle anbietet. Jedes Backend, das sich für Echtzeit Informationen zu einer Sendung interessiert kann sich zu diesem Websocket verbinden und darüber Infos direkt vom Streaming Backend erhalten.
+Die Callbacks sind vor allem für Push-Notifications interessant und um zu wissen, ob eine Sendung wirklich läuft. Die Callback URL zeigt dann zum Beispiel auf ein Streaming Backend, das diese standardisierte Schnittstelle anbietet. Jedes Backend, das sich für Echtzeit Informationen zu einer Sendung interessiert kann sich zu diesem Webhook verbinden und darüber Infos direkt vom Streaming Backend erhalten.
 
-Anfragen, die man über den Wegsocket Callback abwickeln könnte:
+Anfragen, die man über den Weghook Callback abwickeln könnte:
 
 * Läuft der Stream?
 * Läuft die Sendung?
@@ -72,5 +72,5 @@ Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
 </channel>
 ```
 
-## Websocket Callback API
+## Webhook Callback API
 
