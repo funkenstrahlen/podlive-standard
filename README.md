@@ -41,24 +41,31 @@ Anfragen, die man über den Wegsocket Callback abwickeln könnte:
 Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
 
 ```xml
-<item>
-    <title>FS002 - Arduino Blinkenlichter</title>
-    <link>http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/</link>
-    <pubDate>Wed, 27 Feb 2013 08:46:18 +0000</pubDate>
-    <guid isPermaLink="false">podlove-2015-05-17t15:21:00+00:00-9a6539d4d72f6e7</guid>
-    <description>Die zweite Folge und schon eine Sonderfolge. Ich erzähle von meinem Arduino Projekt, an dem ich die letzten Tage gebastelt habe. Dabei versuche ich zu erklären wie man die LED-Leuchtleisten von IKEA an den Arduino anschließen kann, welche Bauteile man dafür braucht und wie ich es geschafft habe, dass man die Farbe der LEDs dann mit dem iPhone steuern kann. Durch die simple API bieten sich nun unendlich viele Möglichkeiten.</description>
-    <atom:link rel="http://podlove.org/deep-link" href="http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/#" />
-    <podlive:startDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:startDate>
-    <podlive:endDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:endDate>
-    <podlive:callback>URL</podlive:callback>
-    <podlive:audiosources>
-        <podlive:audiosource format="mp3" bitrate="128" type="dash">URL</podlive:audiosource>
-        <podlive:audiosource format="mp3" bitrate="128" type="hls">URL</podlive:audiosource>
-        <podlive:audiosource format="mp3" bitrate="128" type="direct">URL</podlive:audiosource>
-        <podlive:audiosource format="mp3" bitrate="256" type="direct">URL</podlive:audiosource>
-    </podlive:audiosources>
-    <itunes:image href="http://podcast.funkenstrahlen.de/wp-content/cache/podlove/fe/cf0a7a7dfb680f8da110c73274b623/fs002-arduino-blinkenlichter_original.png" />
-</item>
+<channel>
+	<title>Funkenstrahlen</title>
+	<link>http://podcast.funkenstrahlen.de</link>
+	<description>Technik, Internet, Gesellschaft.</description>
+	<lastBuildDate>Fri, 13 May 2016 11:22:17 +0000</lastBuildDate>
+	<image><url>http://podcast.funkenstrahlen.de/wp-content/cache/podlove/b8/384e4a23bd372ef6ef74855365d14e/funkenstrahlen_original.png</url><title>Funkenstrahlen</title><link>http://podcast.funkenstrahlen.de</link></image>
+	...
+	<podlive:callback>URL</podlive:callback>
+	<podlive:audiosources>
+	    <podlive:audiosource format="mp3" bitrate="128" type="dash">URL</podlive:audiosource>
+	    <podlive:audiosource format="mp3" bitrate="128" type="hls">URL</podlive:audiosource>
+	    <podlive:audiosource format="mp3" bitrate="128" type="direct">URL</podlive:audiosource>
+	    <podlive:audiosource format="mp3" bitrate="256" type="direct">URL</podlive:audiosource>
+	</podlive:audiosources>
+	<item>
+	    <title>FS002 - Arduino Blinkenlichter</title>
+	    <link>http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/</link>
+	    <pubDate>Wed, 27 Feb 2013 08:46:18 +0000</pubDate>
+	    <guid isPermaLink="false">podlove-2015-05-17t15:21:00+00:00-9a6539d4d72f6e7</guid>
+	    <description>Die zweite Folge und schon eine Sonderfolge. Ich erzähle von meinem Arduino Projekt, an dem ich die letzten Tage gebastelt habe. Dabei versuche ich zu erklären wie man die LED-Leuchtleisten von IKEA an den Arduino anschließen kann, welche Bauteile man dafür braucht und wie ich es geschafft habe, dass man die Farbe der LEDs dann mit dem iPhone steuern kann. Durch die simple API bieten sich nun unendlich viele Möglichkeiten.</description>
+	    <atom:link rel="http://podlove.org/deep-link" href="http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/#" />
+	    <podlive:startDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:startDate>
+	    <podlive:endDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:endDate>
+	    <itunes:image href="http://podcast.funkenstrahlen.de/wp-content/cache/podlove/fe/cf0a7a7dfb680f8da110c73274b623/fs002-arduino-blinkenlichter_original.png" />
+	</item>
 ```
 
 ## Websocket Callback API
