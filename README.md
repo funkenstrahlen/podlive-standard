@@ -1,6 +1,11 @@
 # Podlive Standard
 
-Informationen zur Livesendung wandern in den Podcastfeed. Geplante Episoden als `item` ins RSS, aber **ohne Enclosure**.
+Das hier ist erst einmal die Beschreibung einer Idee und eines Standards für offenes Podcast Livestreaming.
+
+Es gibt drei Parteien: Der Podcaster und sein Feed, das Livestreaming Backend und ein Podcastclient Cloudbackend. Podcastclient deshalb, weil Podcast Livestreams in einem Podcastclient perfekt aufgehoben sind und das Cloudbackend ohnehin schon Feeds verarbeitet.
+
+## Die Grundidee
+Informationen zur Livesendung wandern in den Podcastfeed. Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von Podcastclients ignoriert.
 
 Ein `item` enthält dann folgende Infos:
 
@@ -9,7 +14,7 @@ Ein `item` enthält dann folgende Infos:
 * Sendungstitel
 * Sendungsbeschreibung
 * Infos zum Chat (optional)
-* Collaborators (optional) (wobei das eigentlich ein anderer standard sein sollte unabhängig vom Livestreaming)
+* Collaborators (optional) (wobei das eigentlich ein anderer Standard sein sollte unabhängig vom Livestreaming)
 * Wie lange wird die Sendung dauern? (optional)
 * Coverart (optional)
 * Websocket URL für Callbacks (optional)
@@ -20,13 +25,11 @@ Die Callbacks sind vor allem für Push-Notifications interessant und um zu wisse
 
 Das Podcast App Backend kann so in Echtzeit vom Streaming Backend Infos bekommen.
 
-Anfragen, die man über den Wegsocket Callback abwickeln müsste:
+Anfragen, die man über den Wegsocket Callback abwickeln könnte:
 
 * Läuft der Stream?
 * Läuft die Sendung?
 * Sende Notification (zum Beispiel *Sendung beginnt in 10min*)
-
-Am Ende sind also zwei Standards zu definieren: Wie sieht so ein RSS item aus und wie sieht die Websocket Live API aus.
 
 ## RSS Livestream Item
 
@@ -52,3 +55,6 @@ Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
     <itunes:image href="http://podcast.funkenstrahlen.de/wp-content/cache/podlove/fe/cf0a7a7dfb680f8da110c73274b623/fs002-arduino-blinkenlichter_original.png" />
 </item>
 ```
+
+## Websocket Callback API
+
