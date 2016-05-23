@@ -27,6 +27,7 @@ Anfragen, die man über den Wegsocket Callback abwickeln könnte:
 
 * Läuft der Stream?
 * Läuft die Sendung?
+* Aktuelle Hörerzahlen
 * Sende Notification (zum Beispiel *Sendung beginnt in 10min*)
 
 ## RSS Livestream Item
