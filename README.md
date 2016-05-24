@@ -41,7 +41,7 @@ Anfragen, die man über den Weghook Callback abwickeln könnte:
 
 ## RSS Livestream Item
 
-Namespace definieren: `xmlns:pse="http://podlove.org/streaming-extension"`
+Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 
 ```xml
 <channel>
