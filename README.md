@@ -46,6 +46,7 @@ Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 ```xml
 <channel>
 	<title>Funkenstrahlen</title>
+	<itunes:subtitle>Die Nachlese aus dem Apple Special Event</itunes:subtitle>
 	<link>http://podcast.funkenstrahlen.de</link>
 	<description>Technik, Internet, Gesellschaft.</description>
 	<lastBuildDate>Fri, 13 May 2016 11:22:17 +0000</lastBuildDate>
