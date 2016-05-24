@@ -39,7 +39,7 @@ Anfragen, die man über den Weghook Callback abwickeln könnte:
 
 ![Grafik](images/Grafik.png)
 
-## RSS Livestream Item
+## RSS
 
 Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 
