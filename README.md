@@ -41,7 +41,7 @@ Anfragen, die man über den Weghook Callback abwickeln könnte:
 
 ## RSS Livestream Item
 
-Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
+Namespace definieren: `xmlns:pse="http://podlove.org/streaming-extension"`
 
 ```xml
 <channel>
@@ -51,22 +51,32 @@ Namespace definieren: `xmlns:podlive="http://podlove.org/podlive"`
 	<lastBuildDate>Fri, 13 May 2016 11:22:17 +0000</lastBuildDate>
 	<image><url>http://podcast.funkenstrahlen.de/wp-content/cache/podlove/b8/384e4a23bd372ef6ef74855365d14e/funkenstrahlen_original.png</url><title>Funkenstrahlen</title><link>http://podcast.funkenstrahlen.de</link></image>
 	...
-	<podlive:callback>URL</podlive:callback>
-	<podlive:audiosources>
-	    <podlive:audiosource format="mp3" bitrate="128" type="dash">URL</podlive:audiosource>
-	    <podlive:audiosource format="mp3" bitrate="128" type="hls">URL</podlive:audiosource>
-	    <podlive:audiosource format="mp3" bitrate="128" type="direct">URL</podlive:audiosource>
-	    <podlive:audiosource format="mp3" bitrate="256" type="direct">URL</podlive:audiosource>
-	</podlive:audiosources>
+	<pse:webhook-registration>URL</pse:webhook-registration>
+	<pse:streams media="audio" title="Standard Audio" lang="de">
+		<pse:stream type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene.mp3" />
+		<pse:stream type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene.ogg" />
+		<pse:stream type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
+		<pse:stream type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene.aac" />
+		<pse:stream type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene.heaac" />
+	</pse:streams>
+	<pse:streams media="audio" title="Standard Audio with Live Translation" lang="en,gsw">
+		<pse:stream type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.mp3" />
+		<pse:stream type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.ogg" />
+		<pse:stream type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.opus" />
+		<pse:stream type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.aac" />
+		<pse:stream type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.heaac" />
+	</pse:streams>
+	<pse:streams media="video" title="Standard Audio with Live Translation" lang="de">
+		<pse:stream type="vnd.apple.mpegURL" bitrate="128000" url="http://freakshow.fm/stream/hls" />
+	</pse:streams>
 	<item>
 	    <title>FS002 - Arduino Blinkenlichter</title>
 	    <link>http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/</link>
 	    <pubDate>Wed, 27 Feb 2013 08:46:18 +0000</pubDate>
+	    <pse:time start="2015-03-28T12:34+1" end="2015-03-28T17:34+1">
 	    <guid isPermaLink="false">podlove-2015-05-17t15:21:00+00:00-9a6539d4d72f6e7</guid>
 	    <description>Die zweite Folge und schon eine Sonderfolge. Ich erzähle von meinem Arduino Projekt, an dem ich die letzten Tage gebastelt habe. Dabei versuche ich zu erklären wie man die LED-Leuchtleisten von IKEA an den Arduino anschließen kann, welche Bauteile man dafür braucht und wie ich es geschafft habe, dass man die Farbe der LEDs dann mit dem iPhone steuern kann. Durch die simple API bieten sich nun unendlich viele Möglichkeiten.</description>
 	    <atom:link rel="http://podlove.org/deep-link" href="http://podcast.funkenstrahlen.de/2013/02/27/fs002-arduino-blinkenlichter/#" />
-	    <podlive:startDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:startDate>
-	    <podlive:endDate>Wed, 27 Feb 2013 08:46:18 +0000</podlive:endDate>
 	    <itunes:image href="http://podcast.funkenstrahlen.de/wp-content/cache/podlove/fe/cf0a7a7dfb680f8da110c73274b623/fs002-arduino-blinkenlichter_original.png" />
 	</item>
 </channel>
