@@ -13,13 +13,13 @@ Informationen zur Livesendung wandern in den Podcastfeed.
 
 Grundlegende Metadaten zum Streaming werden in den `channel` gepackt:
 
-* Wo gibt es den Livestream? (mehrere URLs möglich)
-* Webhook URL für Callbacks (optional)
-* Infos zum Chat (optional)
+* Link auf eine Webseite mit Infos. Das kann dann sein: Chat, iCal, ...
 
 Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von Podcastclients ignoriert.
 
 * Wann wird (voraussichtlich) gesendet?
+* Wo gibt es den Livestream? (mehrere URLs möglich)
+* Webhook URL für Callbacks (optional)
 * Sendungstitel
 * Sendungsbeschreibung
 * Collaborators (optional) (wobei das eigentlich ein anderer Standard sein sollte unabhängig vom Livestreaming)
@@ -51,6 +51,7 @@ Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 	<description>Technik, Internet, Gesellschaft.</description>
 	<lastBuildDate>Fri, 13 May 2016 11:22:17 +0000</lastBuildDate>
 	<image><url>http://podcast.funkenstrahlen.de/wp-content/cache/podlove/b8/384e4a23bd372ef6ef74855365d14e/funkenstrahlen_original.png</url><title>Funkenstrahlen</title><link>http://podcast.funkenstrahlen.de</link></image>
+	<pse:live-streaming info-url="URL"/>
 	...
 	<item>
 	    <title>FS002 - Arduino Blinkenlichter</title>
