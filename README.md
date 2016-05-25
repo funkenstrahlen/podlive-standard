@@ -22,7 +22,7 @@ Geplante Episoden als eigenes `item`, aber **ohne Enclosure**. So werden sie von
 * Webhook URL für Callbacks (optional)
 * Sendungstitel
 * Sendungsbeschreibung
-* Collaborators (optional) (wobei das eigentlich ein anderer Standard sein sollte unabhängig vom Livestreaming)
+* Collaborators (optional) (anderer Standard)
 * Wie lange wird die Sendung dauern? (optional)
 * Coverart (optional)
 
