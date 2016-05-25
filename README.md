@@ -54,21 +54,21 @@ Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 	...
 	<pse:webhook-registration>URL</pse:webhook-registration>
 	<pse:streams media="audio" title="Standard Audio" lang="de">
-		<pse:stream mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene.mp3" />
-		<pse:stream mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene.ogg" />
-		<pse:stream mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
-		<pse:stream mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene.aac" />
-		<pse:stream mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene.heaac" />
+		<pse:stream type="icecast" title="Deutsch MP3" mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene.mp3" />
+		<pse:stream type="icecast" title="Deutsch OGG" mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene.ogg" />
+		<pse:stream type="icecast" title="Deutsch OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene.opus" />
+		<pse:stream type="icecast" title="Deutsch ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene.aac" />
+		<pse:stream type="icecast" title="Deutsch AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene.heaac" />
 	</pse:streams>
 	<pse:streams media="audio" title="Standard Audio with Live Translation" lang="en,gsw">
-		<pse:stream mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.mp3" />
-		<pse:stream mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.ogg" />
-		<pse:stream mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.opus" />
-		<pse:stream mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.aac" />
-		<pse:stream mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.heaac" />
+		<pse:stream type="icecast" title="English MP3" mime-type="audio/mpeg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.mp3" />
+		<pse:stream type="icecast" title="English OGG" mime-type="audio/ogg" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.ogg" />
+		<pse:stream type="icecast" title="English OPUS" mime-type="audio/opus" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.opus" />
+		<pse:stream type="icecast" title="English ADTS" mime-type="audio/aac-adts" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.aac" />
+		<pse:stream type="icecast" title="English AACP" mime-type="audio/aac-aacp" bitrate="128000" url="http://streams.xenim.de/metaebene-translation.heaac" />
 	</pse:streams>
 	<pse:streams media="video" title="Standard Audio with Live Translation" lang="de">
-		<pse:stream mime-type="vnd.apple.mpegURL" bitrate="128000" url="http://freakshow.fm/stream/hls" />
+		<pse:stream type="icecast" title="Deutsch MPEG" mime-type="vnd.apple.mpegURL" bitrate="128000" url="http://freakshow.fm/stream/hls" />
 	</pse:streams>
 	<item>
 	    <title>FS002 - Arduino Blinkenlichter</title>
