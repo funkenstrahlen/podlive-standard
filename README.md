@@ -85,3 +85,9 @@ Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 
 ## Webhook Callback API
 
+Zwei Dinge sind zu definieren:
+
+* Wie registriere ich mich für ein Callback?
+* Welche Callbacks gibt es?
+
+Inspiration: [Github Webhooks](https://developer.github.com/v3/repos/hooks/), [Pubsubhubbub](http://pubsubhubbub.github.io/PubSubHubbub/pubsubhubbub-core-0.4.html)
