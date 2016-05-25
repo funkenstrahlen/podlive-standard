@@ -39,7 +39,7 @@ Anfragen, die man über den Weghook Callback abwickeln könnte:
 
 ![Grafik](images/Grafik.png)
 
-## RSS
+## RSS Live Streaming Extension
 
 Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 
@@ -83,7 +83,7 @@ Namespace definieren: `xmlns:pse="http://podlove.org/live-streaming"`
 </channel>
 ```
 
-## Webhook Callback API
+## Webhook Callback API des Streaming Backends
 
 Zwei Dinge sind zu definieren:
 
